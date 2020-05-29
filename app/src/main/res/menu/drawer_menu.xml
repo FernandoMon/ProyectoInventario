@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Username">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_home"
+                android:title="Inicio">
+            </item>
+        </menu>
+    </item>
+    <item android:title="Nuevos elementos">
+        <menu>
+            <item
+                android:id="@+id/newArticle"
+                android:icon="@drawable/ic_add"
+                android:title="Agregar nuevo articulos">
+            </item>
+            <item
+                android:id="@+id/newDepartment"
+                android:icon="@drawable/ic_add"
+                android:title="Agregar nuevo departamento">
+            </item>
+            <item
+                android:id="@+id/newUser"
+                android:icon="@drawable/ic_add"
+                android:title="Crear nuevo usuario">
+            </item>
+
+        </menu>
+    </item>
+    <item android:title="Consultar elementos">
+        <menu>
+            <item
+                android:id="@+id/getArticles"
+                android:icon="@drawable/ic_view_quilt_black_24dp"
+                android:title="Consultar articulos">
+            </item>
+            <item
+                android:id="@+id/getDepartments"
+                android:icon="@drawable/ic_view_quilt_black_24dp"
+                android:title="Consultar Departamentos"></item>
+        </menu>
+    </item>
+    <item android:title="Eliminar elementos">
+        <menu>
+            <item
+                android:id="@+id/dropArticles"
+                android:icon="@drawable/ic_delete"
+                android:title="Eliminar articulos">
+            </item>
+            <item
+                android:id="@+id/dropDepartments"
+                android:icon="@drawable/ic_delete"
+                android:title="Eliminar departamentos">
+            </item>
+        </menu>
+    </item>
+    <item android:title="Sesion">
+        <menu>
+            <item
+                android:id="@+id/logOut"
+                android:icon="@drawable/ic_close_black_24dp"
+                android:title="Cerrar Sesion">
+            </item>
+        </menu>
+    </item>
+</menu>

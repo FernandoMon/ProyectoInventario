@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewDepartment"
+    android:padding="20px">
+    <ImageButton
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back"
+        android:src="@drawable/ic_arrow"
+        android:tint="@color/colorPrimaryDark" />
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Departamento"
+        android:layout_below="@+id/btnback"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"/>
+    <ScrollView
+        android:layout_below="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idlabel"
+                android:textSize="20dp"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:id="@+id/namelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id"
+                android:text="Nombre"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namelabel"
+                android:textSize="20dp"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/contenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"/>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/saveUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Guardar"
+        android:layout_marginBottom="30dp"
+        android:onClick="create"/>
+
+</RelativeLayout>
