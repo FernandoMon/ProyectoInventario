@@ -91,6 +91,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent ir = new Intent(this,NewUsers.class);
             startActivity(ir);
         }
+        if (menuItem.getItemId() == R.id.getDepartments) {
+//            fragmentManager = getSupportFragmentManager();
+//            fragmentTransaction = fragmentManager.beginTransaction();
+//            fragmentTransaction.replace(R.id.container, new NewDepartment());
+//            fragmentTransaction.commit();
+            Intent ir = new Intent(this, GetDepartment.class);
+            startActivity(ir);
+        }
+        if (menuItem.getItemId() == R.id.getArticles) {
+//            fragmentManager = getSupportFragmentManager();
+//            fragmentTransaction = fragmentManager.beginTransaction();
+//            fragmentTransaction.replace(R.id.container, new NewDepartment());
+//            fragmentTransaction.commit();
+            Intent ir = new Intent(this, GetItems.class);
+            startActivity(ir);
+        }
         return false;
     }
 }

@@ -61,22 +61,6 @@ public class NewDepartment extends AppCompatActivity {
         }
     }
 
-    public void search(View view){
-        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "InventarioDB", null, 1);
-        SQLiteDatabase baseDeDatos = admin.getWritableDatabase();
 
-        Cursor fila = baseDeDatos.rawQuery("select department_id, department_name from departments where department_id = 1", null);
-        Toast.makeText(this, "Hola", Toast.LENGTH_SHORT).show();
-        if (fila.moveToFirst()){
-           // do{
-                mostrar.setText(fila.getString(0));
-                mostrar.setText(fila.getString(1));
-            //}while(fila.moveToNext());
-            baseDeDatos.close();
-        }else{
-            Toast.makeText(this, "No se encontro el registro", Toast.LENGTH_SHORT).show();
-            baseDeDatos.close();
-        }
-    }
 
 }
