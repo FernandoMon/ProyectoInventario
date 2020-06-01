@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DropDepartment"
+    android:padding="20px">
+    <ImageButton
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back"
+        android:src="@drawable/ic_arrow"
+        android:tint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnback"
+        android:layout_centerHorizontal="true"
+        android:text="Eliminar Departamento"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="391dp"
+        android:layout_height="279dp"
+        android:layout_below="@+id/titulo"
+        android:layout_marginBottom="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idlabel"
+                android:inputType="numberDecimal"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/namelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id"
+                android:text="Nombre"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namelabel"
+                android:inputType="text"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/contenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/saveUser"
+        android:layout_width="179dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="delete"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="179dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@id/saveUser"
+        android:onClick="search"
+        android:text="Buscar" />
+
+</RelativeLayout>

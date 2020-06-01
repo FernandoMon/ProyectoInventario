@@ -107,6 +107,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent ir = new Intent(this, GetItems.class);
             startActivity(ir);
         }
+        //Bajas
+        if (menuItem.getItemId() == R.id.dropArticles) {
+            Intent ir = new Intent(this, DropItems.class);
+            startActivity(ir);
+        }
+        if (menuItem.getItemId() == R.id.dropDepartments) {
+            Intent ir = new Intent(this, DropDepartment.class);
+            startActivity(ir);
+        }
+
         return false;
     }
 }

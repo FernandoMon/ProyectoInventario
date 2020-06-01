@@ -13,6 +13,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".GetItems"></activity>
         <activity android:name=".GetDepartment" />
+        <activity android:name=".DropDepartment" />
+        <activity android:name=".DropItems" />
+        <activity android:name=".DropUsers" />
         <activity android:name=".NewItem" />
         <activity android:name=".NewDepartment" />
         <activity android:name=".NewUsers" />

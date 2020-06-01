@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DropUsers"
+    android:padding="20dp">
+
+    <ImageButton
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back"
+        android:src="@drawable/ic_arrow"
+        android:tint="@color/colorPrimaryDark" />
+
+
+    <ScrollView
+        android:layout_width="356dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/btnback"
+        android:layout_marginBottom="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:text="Eliminar Usuario"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/namelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titulo"
+                android:text="Nombre de usuario"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namelabel"
+                android:inputType="text"
+                android:textSize="20dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/contenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass" />
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/saveUser"
+        android:layout_width="179dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="delete"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="179dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@id/saveUser"
+        android:text="Buscar" />
+
+</RelativeLayout>
